@@ -1,0 +1,2 @@
+module SearchAnalysesHelper
+end

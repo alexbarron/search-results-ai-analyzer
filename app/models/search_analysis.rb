@@ -1,0 +1,2 @@
+class SearchAnalysis < ApplicationRecord
+end
