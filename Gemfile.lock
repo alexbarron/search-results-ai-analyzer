@@ -97,6 +97,7 @@ GEM
       net-http
     globalid (1.2.1)
       activesupport (>= 6.1)
+    google_search_results (2.2.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.1)
@@ -234,6 +235,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  google_search_results
   importmap-rails
   jbuilder
   puma (~> 5.0)
