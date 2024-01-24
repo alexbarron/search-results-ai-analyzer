@@ -12,28 +12,18 @@
   <% end %>
 
   <div class="my-5">
-    <%= form.label :query %>
-    <%= form.text_area :query, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.label :query, "Search Query" %>
+    <%= form.text_field :query, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :engine %>
-    <%= form.number_field :engine, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+      <%= form.label :engine, "Search Engine" %>
+      <%= form.select(:engine, ['google', 'bing', 'duckduckgo', 'yahoo', 'yandex', 'baidu'], { :class => "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" }) %>
   </div>
 
   <div class="my-5">
-    <%= form.label :prompt %>
-    <%= form.text_area :prompt, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
-
-  <div class="my-5">
-    <%= form.label :search_results %>
-    <%= form.text_area :search_results, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
-
-  <div class="my-5">
-    <%= form.label :chat_response %>
-    <%= form.text_area :chat_response, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.label :prompt, "Chat Prompt" %>
+    <%= form.text_area :prompt, rows: 3, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">

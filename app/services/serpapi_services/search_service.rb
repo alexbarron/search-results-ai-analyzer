@@ -26,9 +26,12 @@ module SerpApiServices
       concatenated_text = ""
 
       results.each do |result|
-        concatenated_text += "Title: #{result[:title]}\n"
-        concatenated_text += "Link: #{result[:link]}\n"
-        concatenated_text += "Snippet: #{result[:snippet]}\n\n"
+        concatenated_text += <<~RESULT
+          Title: #{result[:title]}
+          Link: #{result[:link]}
+          Snippet: #{result[:snippet]}
+          \n\n
+        RESULT
       end
 
       return concatenated_text

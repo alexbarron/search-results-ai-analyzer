@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_22_133152) do
     t.text "prompt"
     t.text "search_results"
     t.text "chat_response"
+    t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

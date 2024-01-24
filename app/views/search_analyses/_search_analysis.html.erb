@@ -16,17 +16,16 @@
 
   <p class="my-5">
     <strong class="block font-medium mb-1">Search results:</strong>
-    <%= search_analysis.search_results %>
+    <%= simple_format(search_analysis.search_results) %>
   </p>
 
   <p class="my-5">
     <strong class="block font-medium mb-1">Chat response:</strong>
-    <%= search_analysis.chat_response %>
+    <%= simple_format(search_analysis.chat_response) %>
   </p>
 
   <% if action_name != "show" %>
     <%= link_to "Show this search analysis", search_analysis, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this search analysis", edit_search_analysis_path(search_analysis), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>

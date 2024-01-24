@@ -19,7 +19,7 @@ module OpenAIServices
       rescue StandardError => e
         OpenStruct.new(success?: false, error: e)
       else
-        OpenStruct.new({success?: true, openai_response: chat_response})
+        OpenStruct.new({success?: true, results: chat_response})
       end
     end
     
